@@ -17,14 +17,14 @@ processor.addEventHandler('Staking.Slashed', modules.staking.events.handleSlashe
 processor.addEventHandler('Staking.Slash', modules.staking.events.handleSlash) //Old name of Slashed event
 
 // processor.addEventHandler('crowdloan.Dissolved', modules.crowdloan.events.handleDissolved)
-processor.addEventHandler('Crowdloan.Created', modules.crowdloan.events.handleCreated)
+//processor.addEventHandler('Crowdloan.Created', modules.crowdloan.events.handleCreated)
 
 processor.addEventHandler('Grandpa.NewAuthorities', modules.grandpa.events.handleNewAuthorities)
 
 //extrinsics handlers
-processor.addCallHandler('Crowdloan.contribute', modules.crowdloan.extrinsics.handleContribute)
+//processor.addCallHandler('Crowdloan.contribute', modules.crowdloan.extrinsics.handleContribute)
 
-// processor.addCallHandler('Staking.payout_stakers', modules.staking.extrinsics.handlePauoutStakers)
+//processor.addCallHandler('Staking.payout_stakers', modules.staking.extrinsics.handlePauoutStakers)
 processor.addCallHandler('Staking.bond', modules.staking.extrinsics.handleBond)
 processor.addCallHandler('Staking.bond_extra', modules.staking.extrinsics.handleBondExtra)
 processor.addCallHandler('Staking.unbond', modules.staking.extrinsics.handleUnbond)

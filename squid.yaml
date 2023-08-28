@@ -1,8 +1,8 @@
 manifestVersion: subsquid.io/v0.1
 name: bali5
-version: 4
+version: 6
 description: |-
-  Explorer
+  rewards, staking and slashes from block 14 000 000
 build:
 
 deploy:
